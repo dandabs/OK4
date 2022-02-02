@@ -1,0 +1,49 @@
+{
+    "name": "Vesisika",
+    "description": "iOS and Android app for Minecraft and other small gaming communities",
+    "date": "17 May 2020 - 2 February 2021",
+    "language": "English, Finnish, Swedish, Norwegian Bokmål, Danish, Arabic, Spanish, Lithuanian, Chinese, German",
+    "codelang": "Nodejs (App + API), Java (plug-in)",
+    "frameworks": [
+        {
+            "name": "React-Native",
+            "url": ""
+        },
+        {
+            "name": "Expo",
+            "url": ""
+        },
+        {
+            "name": "SpigotAPI",
+            "url": ""
+        }
+    ],
+    "services": [
+        {
+            "name": "Google Firebase",
+            "url": ""
+        },
+        {
+            "name": "App Store Connect",
+            "url": ""
+        },
+        {
+            "name": "Google Play API",
+            "url": ""
+        },
+        {
+            "name": "POEditor",
+            "url": ""
+        }
+    ],
+    "commission": {
+        "name": "nobody :)",
+        "url": ""
+    },
+    "repositories": [
+        "dandabs/Vesisika",
+        "dandabs/VesisikaSpigot",
+        "dandabs/VesisikaVerify",
+        "dandabs/VesisikaAPI"
+    ]
+}
