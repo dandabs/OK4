@@ -10,33 +10,33 @@
     "frameworks": [
         {
             "name": "React-Native",
-            "url": ""
+            "url": "https://reactnative.dev"
         },
         {
             "name": "Expo",
-            "url": ""
+            "url": "https://expo.dev"
         },
         {
             "name": "SpigotAPI",
-            "url": ""
+            "url": "https://www.spigotmc.org/wiki/faq/"
         }
     ],
     "services": [
         {
             "name": "Google Firebase",
-            "url": ""
+            "url": "https://firebase.google.com"
         },
         {
             "name": "App Store Connect",
-            "url": ""
+            "url": "https://developer.apple.com/app-store-connect/"
         },
         {
             "name": "Google Play API",
-            "url": ""
+            "url": "https://developers.google.com/android-publisher"
         },
         {
             "name": "POEditor",
-            "url": ""
+            "url": "https://poeditor.com"
         }
     ],
     "commission": {

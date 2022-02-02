@@ -1,0 +1,33 @@
+{
+    "name": "Sedö",
+    "description": "Nodejs Discord-Roblox verification bot with web interface and Firebase integration",
+    "tags": "programming discordbots webapplications",
+    "image": "/img/hcbot.jpg",
+    "date": "8 April 2020 - 21 April 2020",
+    "language": "English",
+    "codelang": "Nodejs",
+    "blogpost": null,
+    "frameworks": [
+        {
+            "name": "Discordjs",
+            "url": "https://reactnative.dev"
+        }
+    ],
+    "services": [
+        {
+            "name": "Google Firebase",
+            "url": "https://firebase.google.com"
+        },
+        {
+            "name": "Roblox API",
+            "url": "https://api.roblox.com/docs"
+        }
+    ],
+    "commission": {
+        "name": "Laatikkoxx",
+        "url": "https://twitter.com/Laatikkoxx"
+    },
+    "repositories": [
+        { "repo": "dandabs/Sedo" }
+    ]
+}

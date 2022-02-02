@@ -1,0 +1,29 @@
+{
+    "name": "Aktiv NY",
+    "description": "Expressjs Finnish blog/news web application",
+    "tags": "programming webapplications",
+    "image": "/img/aktiv.jpg",
+    "date": "5 November 2020 - 23 November 2020",
+    "language": "Finnish",
+    "codelang": "Nodejs",
+    "blogpost": null,
+    "frameworks": [
+        {
+            "name": "Discordjs",
+            "url": "https://reactnative.dev"
+        }
+    ],
+    "services": [
+        {
+            "name": "Google Firebase",
+            "url": "https://firebase.google.com"
+        }
+    ],
+    "commission": {
+        "name": "Aura Ringman",
+        "url": "https://instagram.com/hippilapsi"
+    },
+    "repositories": [
+        { "repo": "dandabs/AktivNyWeb" }
+    ]
+}

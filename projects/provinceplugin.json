@@ -1,0 +1,29 @@
+{
+    "name": "ProvincePlugin",
+    "description": "Country- and monarchy-themed Minecraft gameplay plugin",
+    "tags": "programming bukkitplugins",
+    "image": "/img/furaipan.jpg",
+    "date": "26 December 2019 - 6 November 2020",
+    "language": "English",
+    "codelang": "Java",
+    "blogpost": null,
+    "frameworks": [
+        {
+            "name": "SpigotAPI",
+            "url": "https://www.spigotmc.org/wiki/faq/"
+        }
+    ],
+    "services": [
+        {
+            "name": "Gitlab CI",
+            "url": "https://about.gitlab.com"
+        }
+    ],
+    "commission": {
+        "name": "CloudCraft",
+        "url": "https://cloudcraft.fi"
+    },
+    "repositories": [
+        { "repo": "dandabs/ProvincePlugin" }
+    ]
+}

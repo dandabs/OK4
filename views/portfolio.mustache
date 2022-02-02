@@ -64,42 +64,6 @@
        </div>
       {{/projects}}
 
-      <div class="col-lg-4 col-md-6 col-sm-12 e filter all programming discordbots webapplications" onclick="$('#sedöModal').modal('toggle')">
-        <div class="pfentry" style="background: rgba(40,40,40,0.9) url('../img/hcbot.jpg');">
-          <div class="entrytext" id="test" runat="server">
-            <p class="entrytitle">Sedö</p>
-            <p class="entrydesc">Nodejs Discord-Roblox verification bot with web interface and Firebase integration</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 col-sm-12 e filter all programming bukkitplugins" onclick="$('#provincepluginModal').modal('toggle')">
-        <div class="pfentry" style="background: rgba(40,40,40,0.9) url('../img/furaipan.jpg');">
-          <div class="entrytext">
-            <p class="entrytitle">ProvincePlugin</p>
-            <p class="entrydesc">Country- and monarchy-themed Minecraft gameplay plugin</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 col-sm-12 e filter all programming bukkitplugins webapplications mobileapps" onclick="$('#vesisikaModal').modal('toggle')">
-        <div class="pfentry" style="background: rgba(40,40,40,0.9) url('../img/vesisika.jpg');">
-          <div class="entrytext">
-            <p class="entrytitle">Vesisika</p>
-            <p class="entrydesc">iOS and Android app for Minecraft and other small gaming communities</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 col-sm-12 e filter all programming webapplications">
-        <div class="pfentry" style="background: rgba(40,40,40,0.9) url('../img/aktiv.jpg');">
-          <div class="entrytext">
-            <p class="entrytitle">Aktiv NY</p>
-            <p class="entrydesc">Expressjs Finnish blog-type web application</p>
-          </div>
-        </div>
-      </div>
-
       <div class="col-lg-4 col-md-6 col-sm-12 e filter all programming robloxscripts">
         <div class="pfentry" style="background: rgba(40,40,40,0.9) url('../img/birka.jpg');">
           <div class="entrytext">
@@ -202,6 +166,14 @@
                 <span>Date:</span>{{date}}
               </p>
               <p class="modalsectiondesc">
+                <i class="fas fa-language fa-fw"></i>
+                <span>Language:</span>{{language}}
+              </p>
+              <p class="modalsectiondesc">
+                <i class="fas fa-code fa-fw"></i>
+                <span>Language:</span>{{codelang}}
+              </p>
+              <p class="modalsectiondesc">
                 <i class="fas fa-hands-helping fa-fw"></i>
                 <span>Commissioned by:</span>
 
@@ -212,15 +184,7 @@
                 {{^commission.url}}
                   {{commission.name}}
                 {{/commission.url}}
-                
-              </p>
-              <p class="modalsectiondesc">
-                <i class="fas fa-language fa-fw"></i>
-                <span>Language:</span>{{language}}
-              </p>
-              <p class="modalsectiondesc">
-                <i class="fas fa-code fa-fw"></i>
-                <span>Language:</span>{{codelang}}
+
               </p>
               <p class="modalsectiondesc">
                 <i class="fas fa-microchip fa-fw"></i>
@@ -251,197 +215,6 @@
   </div>
 </div>
 {{/projects}}
-
-<!-- Coding Modals -->
-
-<div class="modal fade" id="sedöModal" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Sedö</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        
-        <div class="container">
-
-          <div class="row">
-
-            <div class="col-6">
-
-              <img src="/img/hcbot.jpg">
-
-            </div>
-            <div class="col-6">
-
-              <p class="modalsectiontitle">Details</p>
-              <p class="modalsectiondesc">
-                <i class="fas fa-calendar-day fa-fw"></i>
-                <span>Date:</span>April 8, 2020 – April 21, 2020
-              </p>
-              <p class="modalsectiondesc">
-                <i class="fas fa-language fa-fw"></i>
-                <span>Language:</span>English
-              </p>
-              <p class="modalsectiondesc">
-                <i class="fas fa-code fa-fw"></i>
-                <span>Language:</span>Nodejs
-              </p>
-              <p class="modalsectiondesc">
-                <i class="fas fa-microchip fa-fw"></i>
-                <span>Frameworks:</span>Discordjs
-              </p>
-              <p class="modalsectiondesc">
-                <i class="fas fa-cogs fa-fw"></i>
-                <span>Services:</span>Google Firebase
-              </p>
-              <p class="modalsectiondesc">
-                <i class="fas fa-hands-helping fa-fw"></i>
-                <span>Commissioned by:</span>Helsinki Cruises (Laatikkoxx)
-              </p>
-              <p class="modalsectiondesc">
-                <i class="fab fa-github fa-fw"></i>
-                <span>GitHub repository:</span><a href="https://github.com/dandabs/sedo">dandabs/Sedo</a>
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="provincepluginModal" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">ProvincePlugin</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        
-        <div class="container">
-
-          <div class="row">
-
-            <div class="col-6">
-
-              <img src="/img/furaipan.jpg">
-
-            </div>
-            <div class="col-6">
-
-              <p class="modalsectiontitle">Details</p>
-              <p class="modalsectiondesc">
-                <i class="fas fa-calendar-day fa-fw"></i>
-                <span>Date:</span>December 26, 2019 – November 6, 2020
-              </p>
-              <p class="modalsectiondesc">
-                <i class="fas fa-language fa-fw"></i>
-                <span>Language:</span>English
-              </p>
-              <p class="modalsectiondesc">
-                <i class="fas fa-code fa-fw"></i>
-                <span>Language:</span>Java
-              </p>
-              <p class="modalsectiondesc">
-                <i class="fas fa-microchip fa-fw"></i>
-                <span>Frameworks:</span>CraftBukkit, Spigot
-              </p>
-              <p class="modalsectiondesc">
-                <i class="fas fa-cogs fa-fw"></i>
-                <span>Services:</span>Gitlab CI
-              </p>
-              <p class="modalsectiondesc">
-                <i class="fas fa-hands-helping fa-fw"></i>
-                <span>Commissioned by:</span>CloudCraft
-              </p>
-              <p class="modalsectiondesc">
-                <i class="fab fa-github fa-fw"></i>
-                <span>GitHub repository:</span><a href="https://github.com/dandabs/provinceplugin">dandabs/ProvincePlugin</a>
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="vesisikaModal" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Vesisika</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        
-        <div class="container">
-
-          <div class="row">
-
-            <div class="col-6">
-
-              <img src="/img/vesisika.jpg">
-
-            </div>
-            <div class="col-6">
-
-              <p class="modalsectiontitle">Details</p>
-              <p class="modalsectiondesc">
-                <i class="fas fa-calendar-day fa-fw"></i>
-                <span>Date:</span>May 17, 2020 - February 2, 2021
-              </p>
-              <p class="modalsectiondesc">
-                <i class="fas fa-language fa-fw"></i>
-                <span>Language:</span>English, Finnish, Swedish, Norwegian Bokmål, Danish, Arabic, Japanese, Spanish, Lithuanian, Chinese, German
-              </p>
-              <p class="modalsectiondesc">
-                <i class="fas fa-code fa-fw"></i>
-                <span>Language:</span>Nodejs | Java
-              </p>
-              <p class="modalsectiondesc">
-                <i class="fas fa-microchip fa-fw"></i>
-                <span>Frameworks:</span>React-Native, Expo | CraftBukkit, Spigot
-              </p>
-              <p class="modalsectiondesc">
-                <i class="fas fa-cogs fa-fw"></i>
-                <span>Services:</span>Google Firebase, App Store Connect, MySQL
-              </p>
-              <p class="modalsectiondesc">
-                <i class="fas fa-hands-helping fa-fw"></i>
-                <span>Commissioned by:</span>nobody :)
-              </p>
-              <p class="modalsectiondesc">
-                <i class="fab fa-github fa-fw"></i>
-                <span>GitHub repository:</span><a href="https://github.com/dandabs/Vesisika">dandabs/Vesisika</a>, <a href="https://github.com/dandabs/VesisikaSpigot">dandabs/VesisikaSpigot</a>, <a href="https://github.com/dandabs/VesisikaVerify">dandabs/VesisikaVerify</a>, <a href="https://github.com/dandabs/VesisikaAPI">dandabs/VesisikaAPI</a>
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
 
 <script src="/js/portfolio.js"></script>
 
