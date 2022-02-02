@@ -1,9 +1,12 @@
 {
     "name": "Vesisika",
     "description": "iOS and Android app for Minecraft and other small gaming communities",
+    "tags": "programming bukkitplugins webapplications mobileapps",
+    "image": "/img/vesisika.jpg",
     "date": "17 May 2020 - 2 February 2021",
     "language": "English, Finnish, Swedish, Norwegian Bokmål, Danish, Arabic, Spanish, Lithuanian, Chinese, German",
     "codelang": "Nodejs (App + API), Java (plug-in)",
+    "blogpost": null,
     "frameworks": [
         {
             "name": "React-Native",
@@ -38,12 +41,12 @@
     ],
     "commission": {
         "name": "nobody :)",
-        "url": ""
+        "url": null
     },
     "repositories": [
-        "dandabs/Vesisika",
-        "dandabs/VesisikaSpigot",
-        "dandabs/VesisikaVerify",
-        "dandabs/VesisikaAPI"
+        { "repo": "dandabs/Vesisika" },
+        { "repo": "dandabs/VesisikaSpigot" },
+        { "repo": "dandabs/VesisikaVerify" },
+        { "repo": "dandabs/VesisikaAPI" }
     ]
 }

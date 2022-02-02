@@ -53,6 +53,17 @@
 
     <div class="col-10" id="content" runat="server">
 
+      {{#projects}}
+        <div class="col-lg-4 col-md-6 col-sm-12 e filter all {{tags}}" onclick="$('#{{name}}Modal').modal('toggle')">
+          <div class="pfentry" style="background: rgba(40,40,40,0.9) url('{{image}}');">
+            <div class="entrytext" id="test" runat="server">
+             <p class="entrytitle">{{name}}</p>
+             <p class="entrydesc">{{description}}</p>
+           </div>
+          </div>
+       </div>
+      {{/projects}}
+
       <div class="col-lg-4 col-md-6 col-sm-12 e filter all programming discordbots webapplications" onclick="$('#sedöModal').modal('toggle')">
         <div class="pfentry" style="background: rgba(40,40,40,0.9) url('../img/hcbot.jpg');">
           <div class="entrytext" id="test" runat="server">
@@ -158,6 +169,88 @@
   </div>
 
 </section>
+
+
+<!-- Modals -->
+
+{{#projects}}
+<div class="modal fade" id="{{name}}Modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{name}}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-5">
+
+              <img src="{{image}}" style="height: 100%; object-fit: cover;">
+
+            </div>
+            <div class="col-7">
+
+              <p class="modalsectiontitle">Details</p>
+              <p class="modalsectiondesc">
+                <i class="fas fa-calendar-day fa-fw"></i>
+                <span>Date:</span>{{date}}
+              </p>
+              <p class="modalsectiondesc">
+                <i class="fas fa-hands-helping fa-fw"></i>
+                <span>Commissioned by:</span>
+
+                {{#commission.url}}
+                  <a href="{{commission.url}}">{{commission.name}}</a>
+                {{/commission.url}}
+
+                {{^commission.url}}
+                  {{commission.name}}
+                {{/commission.url}}
+                
+              </p>
+              <p class="modalsectiondesc">
+                <i class="fas fa-language fa-fw"></i>
+                <span>Language:</span>{{language}}
+              </p>
+              <p class="modalsectiondesc">
+                <i class="fas fa-code fa-fw"></i>
+                <span>Language:</span>{{codelang}}
+              </p>
+              <p class="modalsectiondesc">
+                <i class="fas fa-microchip fa-fw"></i>
+                <span>Frameworks:</span>{{#frameworks}}<a href="{{url}}">{{name}}</a>, {{/frameworks}}
+              </p>
+              <p class="modalsectiondesc">
+                <i class="fas fa-cogs fa-fw"></i>
+                <span>Services:</span>{{#services}}<a href="{{url}}">{{name}}</a>, {{/services}}
+              </p>
+              <p class="modalsectiondesc">
+                <i class="fab fa-github fa-fw"></i>
+                <span>GitHub repository:</span>{{#repositories}}<a href="https://github.com/{{repo}}">{{repo}}</a>, {{/repositories}}
+              </p>
+              {{#blogpost}}
+              <p class="modalsectiondesc">
+                <button type="button" class="btn btn-outline-light" style="width: 100%;">Read the blog post &#10230;</button>
+              </p>
+              {{/blogpost}}
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+{{/projects}}
 
 <!-- Coding Modals -->
 
