@@ -92,7 +92,21 @@
 
             <div class="col-5">
 
+              {{#video}}
+              <div class="row">
+                <div class="col-12">
+                  <iframe id="ytplayer" type="text/html" width="640" height="360" style="width:100%"
+      src="https://www.youtube.com/embed/{{video}}?autoplay=0&origin=https://dandabs.fi"
+      frameborder="0"></iframe>
+                </div>
+              </div>
+              {{/video}}
+
+              {{^video}}
               <img src="{{image}}" style="height: 100%; object-fit: cover;">
+              {{/video}}
+
+              
 
             </div>
             <div class="col-7">
@@ -106,10 +120,14 @@
                 <i class="fas fa-language fa-fw"></i>
                 <span>Language:</span>{{language}}
               </p>
+
+              {{#codelang}}
               <p class="modalsectiondesc">
                 <i class="fas fa-code fa-fw"></i>
                 <span>Language:</span>{{codelang}}
               </p>
+              {{/codelang}}
+
               <p class="modalsectiondesc">
                 <i class="fas fa-hands-helping fa-fw"></i>
                 <span>Commissioned by:</span>
@@ -123,24 +141,55 @@
                 {{/commission.url}}
 
               </p>
+
+              {{#video}}
+              <p class="modalsectiondesc">
+                <i class="fab fa-youtube fa-fw"></i>
+                <span>Video:</span><a href="https://youtube.com/watch?v={{video}}">https://youtube.com/watch?v={{video}}</a>
+              </p>
+              {{/video}}
+
+              {{#infolink}}
+              <p class="modalsectiondesc">
+                <i class="fas fa-globe-europe fa-fw"></i>
+                <span>Information:</span><a href="{{infolink}}">{{infolink}}</a>
+              </p>
+              {{/infolink}}
+
+              {{#credits}}
+              <p class="modalsectiondesc">
+                <i class="fas fa-scroll fa-fw"></i>
+                <span>Credits:</span>{{credits}}
+              </p>
+              {{/credits}}
+              
+              {{#frameworks.length}}
               <div class="descitem">
               <p class="modalsectiondesc">
                 <i class="fas fa-microchip fa-fw"></i>
                 <span>Frameworks:</span><p class="itemtext">{{#frameworks}}, <a href="{{url}}">{{name}}</a>{{/frameworks}}</p>
               </p>
               </div>
+              {{/frameworks.length}}
+
+              {{#services.length}}
               <div class="descitem">
               <p class="modalsectiondesc">
                 <i class="fas fa-cogs fa-fw"></i>
                 <span>Services:</span><p class="itemtext">{{#services}}, <a href="{{url}}">{{name}}</a>{{/services}}</p>
               </p>
             </div>
+            {{/services.length}}
+
+            {{#repositories.length}}
             <div class="descitem">
               <p class="modalsectiondesc">
                 <i class="fab fa-github fa-fw"></i>
                 <span>GitHub repository:</span><p class="itemtext">{{#repositories}}, <a href="https://github.com/{{repo}}">{{repo}}</a>{{/repositories}}</p>
               </p>
             </div>
+            {{/repositories.length}}
+
               {{#blogpost}}
               <p class="modalsectiondesc">
                 <button type="button" class="btn btn-outline-light" style="width: 100%;">Read the blog post &#10230;</button>
