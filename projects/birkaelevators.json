@@ -1,0 +1,24 @@
+{
+    "name": "Birka Stockholm Elevators",
+    "description": "Very simple Lua elevator scripts for Roblox cruise-ferry group Birka Cruises",
+    "tags": "programming robloxscripts",
+    "image": "/img/birka.jpg",
+    "date": "~August 2021",
+    "language": "English",
+    "codelang": "Lua",
+    "blogpost": null,
+    "frameworks": [
+        {
+            "name": "Roblox Lua",
+            "url": "https://developer.roblox.com/en-us/learn-roblox/coding-scripts"
+        }
+    ],
+    "services": [],
+    "commission": {
+        "name": "Aaron Hannula",
+        "url": "https://twitter.com/epixelephant"
+    },
+    "repositories": [
+        { "repo": "dandabs/BirkaElevators" },
+    ]
+}

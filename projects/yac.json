@@ -1,0 +1,18 @@
+{
+    "name": "Yet Another Ceremony",
+    "description": "Minecraft server anniversary talk show",
+    "tags": "videography events",
+    "image": "/img/ceremstage.jpg",
+    "video": "https://youtube.com/watch?v=XXXXXXXX",
+    "date": "July 2019 - November 2019",
+    "language": "English",
+    "codelang": null,
+    "blogpost": null,
+    "frameworks": null,
+    "services": null,
+    "commission": {
+        "name": "CloudCraft",
+        "url": "https://cloudcraft.fi"
+    },
+    "repositories": null
+}
