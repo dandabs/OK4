@@ -1,0 +1,24 @@
+{
+    "name": "CCEssentials",
+    "description": "SAO-themed all-in-one Minecraft essentials plugin, Discord bot and Web application",
+    "tags": "programming webapplications bukkitplugins discordbots",
+    "image": "/img/hatson.jpg",
+    "date": "28 June 2019 - 21 August 2019",
+    "language": "English",
+    "codelang": "Java, Nodejs",
+    "blogpost": null,
+    "frameworks": [
+        {
+            "name": "SpigotAPI",
+            "url": "https://www.spigotmc.org/wiki/faq/"
+        }
+    ],
+    "services": [],
+    "commission": {
+        "name": "CloudCraft",
+        "url": "https://cloudcraft.fi"
+    },
+    "repositories": [
+        { "repo": "dandabs/cloudess" },
+    ]
+}
