@@ -1,0 +1,24 @@
+{
+    "name": "Personal Site (XP Edition)",
+    "description": "Windows 95/XP themed personal website (the version of danielonline.net before the current one)",
+    "tags": "programming websites",
+    "image": "/img/xpsite.jpg",
+    "date": "17 May 2020 - 6 November 2020",
+    "language": "English",
+    "codelang": "HTML, CSS, Javascript",
+    "blogpost": null,
+    "frameworks": [
+        {
+            "name": "Bootstrap",
+            "url": "https://getbootstrap.com/"
+        }
+    ],
+    "services": [],
+    "commission": {
+        "name": "nobody :)",
+        "url": null
+    },
+    "repositories": [
+        { "repo": "dandabs/OttoKoskinen2" },
+    ]
+}
