@@ -54,7 +54,7 @@
     <div class="col-10" id="content" runat="server">
 
       {{#projects}}
-        <div class="col-lg-4 col-md-6 col-sm-12 e filter all {{tags}}" onclick="$('#{{name}}Modal').modal('toggle')">
+        <div class="col-lg-4 col-md-6 col-sm-12 e filter all {{tags}}" onclick="$('#{{id}}Modal').modal('toggle')">
           <div class="pfentry" style="background: rgba(40,40,40,0.9) url('{{image}}');">
             <div class="entrytext" id="test" runat="server">
              <p class="entrytitle">{{name}}</p>
@@ -63,69 +63,6 @@
           </div>
        </div>
       {{/projects}}
-
-      <div class="col-lg-4 col-md-6 col-sm-12 e filter all programming robloxscripts">
-        <div class="pfentry" style="background: rgba(40,40,40,0.9) url('../img/birka.jpg');">
-          <div class="entrytext">
-            <p class="entrytitle">Birka Stockholm Elevators</p>
-            <p class="entrydesc">Very simple Lua elevator scripts for Roblox cruise-ferry group Birka Cruises</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 col-sm-12 e filter all programming websites">
-        <div class="pfentry" style="background: rgba(40,40,40,0.9) url('../img/xpsite.jpg');">
-          <div class="entrytext">
-            <p class="entrytitle">Personal Site (XP Edition)</p>
-            <p class="entrydesc">Windows 95/XP themed personal website (the version of danielonline.net before the current one)</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 col-sm-12 e filter all programming webapplications bukkitplugins discordbots">
-        <div class="pfentry" style="background: rgba(40,40,40,0.9) url('../img/hatson.jpg');">
-          <div class="entrytext">
-            <p class="entrytitle">CCEssentials</p>
-            <p class="entrydesc">SAO-themed all-in-one Minecraft plugin, Discord bot and Web application</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 col-sm-12 e filter all videography competitions">
-        <div class="pfentry" style="background: rgba(40,40,40,0.9) url('../img/breadcomp.jpg');">
-          <div class="entrytext">
-            <p class="entrytitle">Irwin's Bakery "Win Some Dough" Competition</p>
-            <p class="entrydesc">Winning entry on behalf of Slemish College, Ballymena</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 col-sm-12 e filter all videography competitions">
-        <div class="pfentry" style="background: rgba(40,40,40,0.9) url('../img/firstcomp.jpg');">
-          <div class="entrytext">
-            <p class="entrytitle">EA Plastic in Schools Competition</p>
-            <p class="entrydesc">Winning entry on behalf of Slemish College, Ballymena</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 col-sm-12 e filter all videography events">
-        <div class="pfentry" style="background: rgba(40,40,40,0.9) url('../img/ceremstage.jpg');">
-          <div class="entrytext">
-            <p class="entrytitle">Yet Another Ceremony</p>
-            <p class="entrydesc">Minecraft server anniversary ceremony & talk show</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 col-sm-12 e filter all videography trailers">
-        <div class="pfentry" style="background: rgba(40,40,40,0.9) url('../img/ceremstage.jpg');">
-          <div class="entrytext">
-            <p class="entrytitle">Yet Another Ceremony Trailer</p>
-            <p class="entrydesc">Trailer for Minecraft server anniversary ceremony & talk show</p>
-          </div>
-        </div>
-      </div>
 
     </div>
 
@@ -138,7 +75,7 @@
 <!-- Modals -->
 
 {{#projects}}
-<div class="modal fade" id="{{name}}Modal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="{{id}}Modal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -186,18 +123,24 @@
                 {{/commission.url}}
 
               </p>
+              <div class="descitem">
               <p class="modalsectiondesc">
                 <i class="fas fa-microchip fa-fw"></i>
-                <span>Frameworks:</span>{{#frameworks}}<a href="{{url}}">{{name}}</a>, {{/frameworks}}
+                <span>Frameworks:</span><p class="itemtext">{{#frameworks}}, <a href="{{url}}">{{name}}</a>{{/frameworks}}</p>
               </p>
+              </div>
+              <div class="descitem">
               <p class="modalsectiondesc">
                 <i class="fas fa-cogs fa-fw"></i>
-                <span>Services:</span>{{#services}}<a href="{{url}}">{{name}}</a>, {{/services}}
+                <span>Services:</span><p class="itemtext">{{#services}}, <a href="{{url}}">{{name}}</a>{{/services}}</p>
               </p>
+            </div>
+            <div class="descitem">
               <p class="modalsectiondesc">
                 <i class="fab fa-github fa-fw"></i>
-                <span>GitHub repository:</span>{{#repositories}}<a href="https://github.com/{{repo}}">{{repo}}</a>, {{/repositories}}
+                <span>GitHub repository:</span><p class="itemtext">{{#repositories}}, <a href="https://github.com/{{repo}}">{{repo}}</a>{{/repositories}}</p>
               </p>
+            </div>
               {{#blogpost}}
               <p class="modalsectiondesc">
                 <button type="button" class="btn btn-outline-light" style="width: 100%;">Read the blog post &#10230;</button>

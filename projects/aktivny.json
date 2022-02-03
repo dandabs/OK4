@@ -9,14 +9,18 @@
     "blogpost": null,
     "frameworks": [
         {
-            "name": "Discordjs",
-            "url": "https://reactnative.dev"
+            "name": "Bootstrap",
+            "url": "https://getbootstrap.com/"
         }
     ],
     "services": [
         {
             "name": "Google Firebase",
             "url": "https://firebase.google.com"
+        },
+        {
+            "name": "Quill WYSIWYG",
+            "url": "https://quilljs.com"
         }
     ],
     "commission": {

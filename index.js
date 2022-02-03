@@ -27,7 +27,9 @@ app.get ('/portfolio', function(req,res) {
 
     fs.readdirSync(projectsFolder).forEach(file => {
         const data = fs.readFileSync("./projects/" + file, 'utf8');
-        projects.push(JSON.parse(data));
+        var topush = JSON.parse(data);
+        topush.id = file.split('.json')[0];
+        projects.push(topush);
     })
 
     res.render('portfolio', {pageTitle: "Portfolio", projects: projects});

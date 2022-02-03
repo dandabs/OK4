@@ -9,16 +9,16 @@
     "blogpost": null,
     "frameworks": [
         {
-            "name": "Roblox Lua",
-            "url": "https://developer.roblox.com/en-us/learn-roblox/coding-scripts"
+            "name": "Luau (Roblox Lua)",
+            "url": "https://luau-lang.org"
         }
     ],
-    "services": [],
+    "services": null,
     "commission": {
         "name": "Aaron Hannula",
         "url": "https://twitter.com/epixelephant"
     },
     "repositories": [
-        { "repo": "dandabs/BirkaElevators" },
+        { "repo": "dandabs/BirkaElevators" }
     ]
 }

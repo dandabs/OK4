@@ -13,12 +13,12 @@
             "url": "https://getbootstrap.com/"
         }
     ],
-    "services": [],
+    "services": null,
     "commission": {
         "name": "nobody :)",
         "url": null
     },
     "repositories": [
-        { "repo": "dandabs/OttoKoskinen2" },
+        { "repo": "dandabs/OttoKoskinen2" }
     ]
 }

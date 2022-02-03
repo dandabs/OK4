@@ -131,7 +131,7 @@ img {
 }
 
 span {
-    margin-right: 5px;
+    margin-right: 2px;
     /*font-family: 'Maven Pro', 'sans-serif';
     color: rgb(192, 192, 192);*/
     font-family: 'Maven Pro', 'sans-serif';
@@ -146,4 +146,31 @@ span {
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 1s ease;
+}
+
+.itemtext {
+    display: unset !important;
+    margin-block-start: unset !important;
+    margin-block-end: unset !important;
+    margin-inline-start: unset !important;
+    margin-inline-end: unset !important;
+}
+
+.itemtext::first-letter {
+    display:none !important;
+    font-size: 0% !important;
+}
+
+/*p::first-letter {
+    display:none;
+    font-size: 200%;
+}*/
+
+.stitle::first-letter {
+    display:none;
+    font-size: 200%;
+}
+
+.descitem {
+    display: flex;
 }

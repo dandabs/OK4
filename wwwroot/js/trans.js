@@ -8,7 +8,7 @@ var dict = {
         introTitle: 'INTRODUCTION',
         introDesc: 'Hi, I\'m Dan.',
         introBody1: 'I\'m a 16 year old from Ballymena, Northern Ireland 🇬🇧 🇮🇪.',
-        introBody2: 'I am currently in the GCSE phase of British secondary education, taking exam courses in Business and Communication Studies, Digital Engineering, Chemistry, Biology, Physics, English Literature, Advanced Mathematics and Geography, and Mathematics, English and Religious Studies.',
+        introBody2: 'I am currently in the GCSE phase of British secondary education, taking exam courses in Business and Communication Studies, Digital Technology, Double-Award Science (Chemistry, Biology, Physics), English Literature, Further Mathematics and Geography, as well as the compulsary Mathematics, English Language and Religious Studies.',
         introBody3: 'In the near future I hope to continue my education journey through a Level 3 Extended Diploma in Computing / Software Engineering (or A-levels), and studying at university in Finland - where I\'m planning to immigrate to (as soon as possible) when I become an adult. I\'m interested in both software development and cyber-security, and I\'m considering a job in either one of these fields.',
         introBody4: 'Since creating my first basic HTML website at age 7, I\'ve been dedicated to improving my skills with developing websites, apps, APIs and pretty much anything that interests me - nothing is too big of a challenge to even try!',
 
