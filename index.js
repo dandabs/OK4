@@ -16,6 +16,14 @@ app.get ('/', function(req,res) {
     res.render('index', {pageTitle: "Home"});
 });
 
+app.get ('/post', function(req,res) {
+    res.render('post', {pageTitle: "Post"});
+});
+
+app.get ('/post/create', function(req,res) {
+    res.render('create', {pageTitle: "Create Post"});
+});
+
 app.get ('/qualifications', function(req,res) {
     res.render('qualifications', {pageTitle: "Qualifications"});
 });

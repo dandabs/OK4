@@ -1,0 +1,52 @@
+{{>header}}
+
+<link rel="stylesheet" href="/css/post.css" />
+
+<section id="top">
+
+    <div class="text-center vertical" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100"
+    data-aos-offset="0" id="eeee2">
+    <h1 class="display-4 title" id="title" style="opacity: 0;">.</h1>
+    <p class="subtitle" style="opacity: 0;">.</p>
+    </div>
+
+  <div class="text-center vertical" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100"
+    data-aos-offset="0" id="eeeee">
+    <h1 class="display-4 title" id="title">Create a post</h1>
+    <!--<p class="subtitle">Add a blog post to the website.</p>-->
+  </div>
+
+</section>
+
+<section id="main" runat="server">
+
+  <div class="container" runat="server">
+    <div class="row" runat="server">
+    <div class="col-12">
+
+        
+
+        <div id="textbox"></div>
+
+    </div>
+    </div>
+  </div>
+
+</section>
+
+<link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/themes/dark.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
+
+<script>
+    var editor = new FroalaEditor('#textbox', {
+        fontFamily: {
+            "Viga,sans-serif": 'Viga',
+            "'Maven Pro',sans-serif": 'Maven Pro'
+        },
+        dragInline: false,
+        pluginsEnabled: ['image', 'link', 'draggable']
+    });
+</script>
+
+{{>footer}}

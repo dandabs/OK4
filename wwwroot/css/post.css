@@ -1,0 +1,103 @@
+section#top {
+    height: calc(30vh) !important;
+    z-index: -1;
+}
+
+#eeeee {
+    left: 0;
+    padding-left: 0;
+}
+
+#eeee2 {
+    width: 100vw;
+    height: 30vh;
+    position: absolute;
+    left: 0;
+    padding-left: 0;
+    top: 15vh;
+    background-image: linear-gradient(to bottom, rgba(10,10,10,0) 70%, rgba(10,10,10, 1)), url('../img/200913.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter: grayscale(100%);
+    opacity: 0.4;
+}
+
+section {
+    padding-top:3%;
+}
+
+div#sidebar {
+    border-right: 2px solid white;
+    text-align: right;
+}
+
+a.item {
+    color: rgba(192, 192, 192, 0.5) !important;
+    font-family: 'Maven Pro', 'sans-serif';
+
+    margin-top: 0px;
+    margin-bottom: 5px;
+
+    display: block;
+    cursor: pointer;
+}
+
+a.item.active {
+    color: rgb(192, 192, 192) !important;
+}
+
+a.stitle.active {
+    color: rgb(255, 255, 255) !important;
+}
+
+a.stitle {
+    color: rgba(255, 255, 255, 0.5) !important;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    display: block;
+    cursor: pointer;
+}
+
+div#content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.e {
+    overflow: hidden;
+    margin-bottom: 3%;
+    height: 300px;
+}
+
+.section#main {
+    margin-bottom: 0 !important;
+}
+
+.row {
+    padding-bottom: 0 !important;
+}
+
+span {
+    /*margin-right: 2px;*/
+    /*font-family: 'Maven Pro', 'sans-serif';
+    color: rgb(192, 192, 192);*/
+    font-family: 'Maven Pro', 'sans-serif';
+    color: rgb(192, 192, 192);
+}
+
+.title {
+    letter-spacing: unset !important;
+}
+
+.thick {
+    font-family: 'Viga', sans-serif;
+    color: #ebebeb;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+
+.col-4 {
+    justify-content:center;
+}
